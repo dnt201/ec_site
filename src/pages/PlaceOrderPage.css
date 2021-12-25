@@ -1,0 +1,113 @@
+.place-order-container input::-webkit-outer-spin-button,
+.place-order-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.place-order-container input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.one_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.t-a-center {
+  text-align: center;
+}
+
+.place-order-container .thanh-toan-lazy {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.place-order-container .thanh-toan-lazy .error_message {
+  color: red;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.place-order-container .thanh-toan-lazy .bill .summary-lazy-css {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.place-order-container .thanh-toan-lazy .bill .summary-lazy-css > span {
+  font-size: 18px;
+}
+.place-order-container .thanh-toan-lazy .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.place-order-container .thanh-toan-lazy .info {
+  font-size: 20px;
+  padding: 6px 12px;
+  width: 80%;
+  margin-left: 5%;
+}
+.place-order-container .thanh-toan-lazy .info  input {
+  font-size: 20px;
+  padding: 4px 8px;
+}
+.place-order-container .thanh-toan-lazy .info > button {
+  margin-left: 4px;
+  font-size: 20px;
+  padding: 4px 8px;
+  color: #e8326a;
+  background-color: transparent;
+  border: 1px solid #e8326a;
+  transition: 1s;
+  width: 50%;
+  margin-top: 8px;
+  margin-left: 25%;
+  cursor: pointer;
+}
+
+.place-order-container .thanh-toan-lazy .info > button.yes {
+  color: green;
+  border: 1px solid green;
+}
+.place-order-container .thanh-toan-lazy .info > button.yes:hover {
+  color: white;
+  background-color: green;
+}
+
+.place-order-container .thanh-toan-lazy .info > button.cancel {
+  color: red;
+  border: 1px solid red;
+}
+.place-order-container .thanh-toan-lazy .info > button.cancel:hover {
+  color: white;
+  background-color: red;
+}
+
+.place-order-container .thanh-toan-lazy .info > button:hover {
+  transition: 1s;
+  color: white;
+  background-color: #e8326a;
+}
+@media screen and (max-width: 960px) {
+  .place-order-container .thanh-toan-lazy {
+    flex-direction: column;
+  }
+  .place-order-container .thanh-toan-lazy .info {
+    font-size: 20px;
+    padding: 6px 12px;
+    width: 100%;
+  }
+  .place-order-container .thanh-toan-lazy .info > button {
+    margin-top: 16px;
+    margin-left: 20%;
+    width: 60%;
+  }
+  .place-order-container .thanh-toan-lazy .bill{
+      width: 276px;
+  }
+}
